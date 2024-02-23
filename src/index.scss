@@ -1,0 +1,159 @@
+$bg-dark: #242424;
+$btn-dark: #1a1a1a;
+$font-family: Inter,
+system-ui,
+Avenir,
+Helvetica,
+Arial,
+sans-serif;
+
+:root {
+  font-family: $font-family;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #444;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body, #root {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.dark {
+  background-color: $bg-dark;
+  color: #eee;
+}
+
+.quote-wrap {
+  min-height: 70px;
+}
+
+.quote {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* Custom Styles */
+.loading-overlay {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 8px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  nav {
+    span {
+      margin-right: 10px;
+    }
+    button {
+      &.dark-btn {
+        background-color: $btn-dark;
+        color: #eee;
+      }
+      &.theme-btn {
+        margin-right: 20px;
+        padding: 5px 10px;
+        font-size: .9rem;
+      }
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      &:hover, &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  > * {
+    padding: 9px 15px;
+    margin-bottom: 5px;
+    font-family: $font-family;
+  }
+  input, textarea {
+    border-radius: 3px;
+    outline: none;
+  }
+  button {
+    background-color: #1ccd71;
+    color: #fff;
+    border-radius: 3px;
+  }
+}
+
+
+/* Responsive Styles */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
