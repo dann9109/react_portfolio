@@ -1,11 +1,11 @@
 $bg-dark: #242424;
 $btn-dark: #1a1a1a;
 $font-family: Inter,
-system-ui,
-Avenir,
-Helvetica,
-Arial,
-sans-serif;
+  system-ui,
+  Avenir,
+  Helvetica,
+  Arial,
+  sans-serif;
 
 :root {
   font-family: $font-family;
@@ -24,11 +24,13 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
-body, #root {
+body,
+#root {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -51,9 +53,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -82,6 +86,18 @@ button:focus-visible {
   margin: 0 auto;
 }
 
+.nav-link {
+  color: #1a1a1a;
+}
+
+.dark-mode-link {
+  color: #eee;
+}
+
+.light-mode-link {
+  color: #1a1a1a;
+}
+
 /* Custom Styles */
 .loading-overlay {
   min-height: 100vh;
@@ -95,15 +111,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   nav {
     span {
       margin-right: 10px;
     }
+
     button {
       &.dark-btn {
         background-color: $btn-dark;
         color: #eee;
       }
+
       &.theme-btn {
         margin-right: 20px;
         padding: 5px 10px;
@@ -115,8 +134,17 @@ header {
       &:not(:last-child) {
         margin-right: 5px;
       }
-      &:hover, &.active {
+
+      &:hover {
+        color: inherit;
+        font-size: larger;
+        transition: font-size .5s;
+      }
+
+
+      &.active {
         text-decoration: underline;
+
       }
     }
   }
@@ -127,15 +155,19 @@ form {
   flex-direction: column;
   width: 400px;
   margin: 0 auto;
-  > * {
+
+  >* {
     padding: 9px 15px;
     margin-bottom: 5px;
     font-family: $font-family;
   }
-  input, textarea {
+
+  input,
+  textarea {
     border-radius: 3px;
     outline: none;
   }
+
   button {
     background-color: #1ccd71;
     color: #fff;
@@ -150,9 +182,11 @@ form {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
