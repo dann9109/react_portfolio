@@ -1,4 +1,4 @@
-import resume from "bridewell_aerial.png"
+// import resume from "bridewell_aerial.png"
 
 function Res() {
     return (
