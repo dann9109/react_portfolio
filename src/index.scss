@@ -73,7 +73,12 @@ button:focus-visible {
 
 .dark {
   background-color: $bg-dark;
-  color: #eee;
+  color: #90c7fe;
+}
+
+.light {
+  background-color: #90c7fe;
+  color: #07023f
 }
 
 .quote-wrap {
@@ -87,15 +92,15 @@ button:focus-visible {
 }
 
 .nav-link {
-  color: #1a1a1a;
+  color: #07023f;
 }
 
 .dark-mode-link {
-  color: #eee;
+  color: #90c7fe;
 }
 
 .light-mode-link {
-  color: #1a1a1a;
+  color: #07023f;
 }
 
 /* Custom Styles */
@@ -120,13 +125,15 @@ header {
     button {
       &.dark-btn {
         background-color: $btn-dark;
-        color: #eee;
+        color: #90c7fe;
       }
 
       &.theme-btn {
         margin-right: 20px;
         padding: 5px 10px;
         font-size: .9rem;
+        background-color: #90c7fe;
+        color: $btn-dark;
       }
     }
 

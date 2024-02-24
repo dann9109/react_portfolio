@@ -40,7 +40,7 @@ function App() {
       <div className="loading-overlay">
         <p>Loading...</p>
       </div> :
-      <div className={`main-content ${isDarkMode ? 'dark' : ''}`}>
+      <div className={`main-content ${isDarkMode ? 'dark' : 'light'}`}>
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <main>
           <div className="quote-wrap">
