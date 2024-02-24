@@ -1,5 +1,5 @@
-$bg-dark: #242424;
-$btn-dark: #1a1a1a;
+$bg-dark: #07023f;
+$btn-dark: #07023f;
 $font-family: Inter,
   system-ui,
   Avenir,
@@ -148,6 +148,17 @@ header {
       }
     }
   }
+}
+
+.footer-icons {
+  white-space: nowrap;
+}
+
+.footer-img {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 form {

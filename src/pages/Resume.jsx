@@ -3,7 +3,7 @@
 function Res() {
     return (
 
-        <h1>hello</h1>
+        <h1 className="text-center">Resume</h1>
         // {/* <a href={resume} download>Resume Download</a> */ }
 
 

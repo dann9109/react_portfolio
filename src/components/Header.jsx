@@ -47,6 +47,15 @@ function Header({ isDarkMode, setIsDarkMode }) {
         >
           Contact
         </NavLink>
+        <NavLink
+          to="/resume"
+          activestyle={{
+            color: isDarkMode ? '#eee' : '#242424'
+          }}
+          className={isDarkMode ? 'dark-mode-link nav-link' : 'light-mode-link nav-link'}
+        >
+          Resume
+        </NavLink>
       </nav>
     </header>
   );

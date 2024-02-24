@@ -1,12 +1,18 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-
+// Import Components
 import Header from './components/Header'
-// Import the Home component
+import Footer from './components/Footer'
+
+
+// Import the Home Page
 import Home from './pages/Home'
+// Import the Contact Page
 import Contact from './pages/Contact'
+// Import the About Page
 import About from './pages/About'
-import Resume from './pages/About'
+// Import the Resume Page
+import Resume from './pages/Resume'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true)
@@ -45,8 +51,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
+        <Footer />
+
       </div>
   )
 }
