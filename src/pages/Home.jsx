@@ -32,15 +32,19 @@ const projects = [
 ];
 
 const Project = ({ title, image, deployedLink, githubLink }) => {
+  const navigateToLink = (url) => {
+    window.location.href = url; // This changes the current window location to the new URL
+  };
+
   return (
     <div className="project-card">
       <h2>{title}</h2>
       <img src={image} alt={title} className="project-image" />
       <p>
-        <a href={deployedLink}>Deployed Link</a>
+        <button href={deployedLink} className="resume-btn" onClick={() => navigateToLink(deployedLink)}>Deployed Link</button>
       </p>
       <p>
-        <a href={githubLink}>GitHub Repository</a>
+        <button href={githubLink} className="resume-btn" onClick={() => navigateToLink(githubLink)}>GitHub Repository</button>
       </p>
     </div>
   );
