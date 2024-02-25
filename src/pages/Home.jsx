@@ -53,7 +53,7 @@ const Project = ({ title, image, deployedLink, githubLink }) => {
 function Home() {
   return (
     <div>
-      <h1 className="text-center">Home</h1>
+      <h1 className="text-center">Portfolio</h1>
       {projects.map((project, index) => (
         <Project
           key={index}

@@ -27,7 +27,7 @@ function Header({ isDarkMode, setIsDarkMode }) {
           }}
           className={isDarkMode ? 'dark-mode-link nav-link' : 'light-mode-link nav-link'}
         >
-          Home
+          Portfolio
         </NavLink>
         <NavLink
           to="/about"
