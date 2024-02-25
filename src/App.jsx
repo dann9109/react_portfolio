@@ -55,7 +55,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
 
-          <footer className="fixed-bottom"><Footer /></footer>
+          <Footer />
 
         </main>
 
