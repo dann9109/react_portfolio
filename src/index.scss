@@ -175,6 +175,13 @@ header {
   /* This makes sure it centers in its container if you have align-items: center */
 }
 
+.custom-h3-width {
+  max-width: 500px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the text block */
+}
+
 footer {
   position: fixed;
   left: 0px;
