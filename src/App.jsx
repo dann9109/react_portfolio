@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+
 // Import Components
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -53,10 +54,15 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
+
+          <footer className="fixed-bottom"><Footer /></footer>
+
         </main>
-        <Footer />
+
 
       </div>
+
+
   )
 }
 

@@ -9,7 +9,7 @@ function Header({ isDarkMode, setIsDarkMode }) {
 
   return (
     <header>
-      <h3>Portfolio Practice</h3>
+      <h3>Dan Stella</h3>
 
       <nav>
         <span>Mode: {isDarkMode ? 'Dark' : 'Light'}</span>

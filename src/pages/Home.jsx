@@ -33,9 +33,9 @@ const projects = [
 
 const Project = ({ title, image, deployedLink, githubLink }) => {
   return (
-    <div>
+    <div className="project-card">
       <h2>{title}</h2>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} className="project-image" />
       <p>
         <a href={deployedLink}>Deployed Link</a>
       </p>
