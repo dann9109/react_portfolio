@@ -6,25 +6,25 @@ import React from 'react';
 const projects = [
   {
     title: 'JSQuiz',
-    image: 'public/jsquizapp.png',
+    image: '/public/jsquizapp.png',
     deployedLink: 'https://dann9109.github.io/jsquiz/',
     githubLink: 'https://github.com/dann9109/jsquiz',
   },
   {
     title: 'Weather Dashboard App',
-    image: 'public/weather.jpg',
+    image: '/public/weather.jpg',
     deployedLink: 'https://dann9109.github.io/weatherdashboard/',
     githubLink: 'https://github.com/dann9109/weatherdashboard',
   },
   {
     title: 'JSpassword Generator',
-    image: 'public/passwordgenerator.png',
+    image: '/public/passwordgenerator.png',
     deployedLink: 'https://example.com/project2',
     githubLink: 'https://github.com/dann9109/jspasswordgenerator',
   },
   {
     title: 'Flavor Hub',
-    image: 'public/flavorhub.png',
+    image: '/public/flavorhub.png',
     deployedLink: 'https://infinite-journey-57628-3f2779f996f7.herokuapp.com/',
     githubLink: 'https://github.com/magellanrose/Recipe_Book_Project',
   },
